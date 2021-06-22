@@ -1,0 +1,11 @@
+# docker-compose.yml
+services:
+    app:
+        image: aloxbro/hello-app
+    server:
+        build: ./server
+        ports:
+            - 5050:5000
+    mongodb:
+        image: mongo
+    
